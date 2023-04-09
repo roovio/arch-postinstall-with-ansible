@@ -130,3 +130,19 @@
       remote: flathub
       state: present
     become: true
+    
+  - name: Install Gradience Package (flatpak)
+    community.general.flatpak:
+      name: com.github.GradienceTeam.Gradience
+      method: system
+      remote: flathub
+      state: present
+    become: true
+
+  - name: Install Discord Package (flatpak)
+    community.general.flatpak:
+      name: com.discordapp.Discord
+      method: system
+      remote: flathub
+      state: present
+    become: true
