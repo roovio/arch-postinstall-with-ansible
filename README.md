@@ -22,4 +22,9 @@ ansible-playbook playbooks/<playbook.yml>  -u <USER> -i inventory/hosts --ask-pa
 Recommended installation order:
 - `ansible.yml`
 - `ansible-aur.yml`
-- `other playbooks`
+- `cli-tools.yml`
+- `dotfiles.yml`
+- `zsh.yml`
+- `gnome.yml`
+- `apps.yml`
+- `<other playbooks>`
