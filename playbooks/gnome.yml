@@ -54,6 +54,7 @@
       name: com.mattjakeman.ExtensionManager
       state: present
       method: user
+    become: true
 
 
   #############################################################
@@ -123,13 +124,13 @@
       value: "'Cantarell 10'"
       state: present
       
-  - name: Set Document font to SF Pro Text 11
+  - name: Set Document font to Noto Sans 11
     community.general.dconf:
       key: "/org/gnome/desktop/interface/document-font-name"
       value: "'Noto Sans 11'"
       state: present
       
-  - name: Set Monospace font to SF Mono 10
+  - name: Set Monospace font to Cascadia Mono 10
     community.general.dconf:
       key: "/org/gnome/desktop/interface/monospace-font-name"
       value: "'Cascadia Mono 10'"
@@ -141,13 +142,13 @@
       value: "true"
       state: present
 
-  - name: Set title bar font for legacy apps to SF Pro Display Bold 11
+  - name: Set title bar font for legacy apps to Cantarell Bold 11
     community.general.dconf:
       key: "/org/gnome/desktop/wm/preferences/titlebar-font"
       value: "'Cantarell Bold 11'"
       state: present
 
-  - name: Set font hinting to medium
+  - name: Set font hinting to slight
     community.general.dconf:
       key: "/org/gnome/desktop/interface/font-hinting"
       value: "'slight'"
